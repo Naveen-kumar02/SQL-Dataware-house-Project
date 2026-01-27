@@ -116,11 +116,11 @@ BEGIN TRY
 	PRINT '>> ----------------'
 	
 	SET @start_time = GETDATE(); 
-	PRINT '>> Truncating Table: bronze.erp_pc_cat_g1v2';
-	Truncate table bronze.erp_pc_cat_g1v2;
+	PRINT '>> Truncating Table: bronze.erp_px_cat_g1v2';
+	Truncate table bronze.erp_px_cat_g1v2;
 
-	PRINT '>> Inserting Data into Table: bronze.erp_pc_cat_g1v2';
-	Bulk insert bronze.erp_pc_cat_g1v2 
+	PRINT '>> Inserting Data into Table: bronze.erp_px_cat_g1v2';
+	Bulk insert bronze.erp_px_cat_g1v2 
 	from 'C:\Users\pnave\OneDrive\Desktop\SQL_PROJECT\sql-data-warehouse-project\sql-data-warehouse-project\datasets\source_erp\PX_CAT_G1V2.csv'
 	with (
 		FIRSTROW=2,
